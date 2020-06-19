@@ -1,0 +1,6 @@
+import gs_scraper as gs
+import pandas as pd 
+
+df = gs.get_jobs('Data Scientist', 80, False,)
+
+df.to_csv('Data Scientist.csv',index = False)
